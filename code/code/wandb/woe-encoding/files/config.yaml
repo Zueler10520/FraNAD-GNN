@@ -1,0 +1,123 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.10
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.20
+    start_time: 1733716889.378141
+    t:
+      1:
+      - 1
+      - 5
+      - 9
+      - 50
+      - 53
+      - 55
+      - 76
+      2:
+      - 1
+      - 5
+      - 9
+      - 50
+      - 53
+      - 55
+      - 76
+      3:
+      - 2
+      - 16
+      - 23
+      4: 3.8.20
+      5: 0.13.10
+      8:
+      - 5
+bin_encoding:
+  desc: null
+  value: true
+bs:
+  desc: null
+  value: 64
+dname:
+  desc: null
+  value: tfinance
+gpuid:
+  desc: null
+  value: 0
+in_feats:
+  desc: null
+  value:
+  - 50
+k:
+  desc: null
+  value: 4
+lr:
+  desc: null
+  value: 0.001
+max_epochs:
+  desc: null
+  value: 50
+model:
+  desc: null
+  value: dga_bin
+n_classes:
+  desc: null
+  value: 2
+n_etypes:
+  desc: null
+  value: 1
+n_head:
+  desc: null
+  value: 1
+n_hidden:
+  desc: null
+  value: 64
+nowandb:
+  desc: null
+  value: false
+num_nodes:
+  desc: null
+  value: 39357
+p:
+  desc: null
+  value: 0.3
+patience:
+  desc: null
+  value: 10
+project:
+  desc: null
+  value: dga_reproduction
+seed:
+  desc: null
+  value: 42
+trn_idx:
+  desc: null
+  value: '[    0     3    10 ... 39351 39353 39354]'
+tst_idx:
+  desc: null
+  value: '[    1     2     4 ... 39348 39352 39356]'
+unclear_down:
+  desc: null
+  value: 0.025
+unclear_up:
+  desc: null
+  value: 0.025
+usegpu:
+  desc: null
+  value: true
+val_idx:
+  desc: null
+  value: '[    7     8    12 ... 39315 39339 39355]'
+w:
+  desc: null
+  value:
+  - 1
+  - 1
+weight_decay:
+  desc: null
+  value: 0.0005
+z:
+  desc: null
+  value: 0.025

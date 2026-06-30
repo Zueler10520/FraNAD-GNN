@@ -1,0 +1,33 @@
+2024-12-09 11:50:27,002 INFO    MainThread:2051 [wandb_setup.py:_flush():68] Configure stats pid to 2051
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_setup.py:_flush():68] Loading settings from /root/.config/wandb/settings
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_setup.py:_flush():68] Loading settings from /root/DGA-GNN/code/wandb/settings
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'code/train.py', 'program': 'train.py'}
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_init.py:_log_setup():492] Logging user logs to /root/DGA-GNN/code/wandb/run-20241209_115026-8ex9xbv7/logs/debug.log
+2024-12-09 11:50:27,003 INFO    MainThread:2051 [wandb_init.py:_log_setup():493] Logging internal logs to /root/DGA-GNN/code/wandb/run-20241209_115026-8ex9xbv7/logs/debug-internal.log
+2024-12-09 11:50:27,004 INFO    MainThread:2051 [wandb_init.py:init():532] calling init triggers
+2024-12-09 11:50:27,004 INFO    MainThread:2051 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'dname': 'tfinance', 'project': 'dga_reproduction', 'model': 'dga_bin', 'bin_encoding': True, 'n_head': 1, 'n_hidden': 64, 'p': 0.3, 'k': 4, 'z': 0.025, 'seed': 42, 'bs': 64, 'lr': 0.001, 'weight_decay': 0.0005, 'max_epochs': 50, 'patience': 25, 'usegpu': True, 'gpuid': 0, 'nowandb': False}
+2024-12-09 11:50:27,004 INFO    MainThread:2051 [wandb_init.py:init():588] starting backend
+2024-12-09 11:50:27,005 INFO    MainThread:2051 [wandb_init.py:init():592] setting up manager
+2024-12-09 11:50:27,008 INFO    MainThread:2051 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-09 11:50:27,010 INFO    MainThread:2051 [wandb_init.py:init():599] backend started and connected
+2024-12-09 11:50:27,136 INFO    MainThread:2051 [wandb_init.py:init():687] updated telemetry
+2024-12-09 11:50:27,161 INFO    MainThread:2051 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2024-12-09 11:50:28,910 INFO    MainThread:2051 [wandb_run.py:_on_init():2134] communicating current version
+2024-12-09 11:50:29,345 INFO    MainThread:2051 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.19.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-12-09 11:50:29,345 INFO    MainThread:2051 [wandb_init.py:init():775] starting run threads in backend
+2024-12-09 11:50:31,465 INFO    MainThread:2051 [wandb_run.py:_console_start():2114] atexit reg
+2024-12-09 11:50:31,466 INFO    MainThread:2051 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2024-12-09 11:50:31,466 INFO    MainThread:2051 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2024-12-09 11:50:31,467 INFO    MainThread:2051 [wandb_run.py:_redirect():2059] Redirects installed.
+2024-12-09 11:50:31,468 INFO    MainThread:2051 [wandb_init.py:init():817] run started, returning control to user process
+2024-12-09 11:50:33,648 INFO    MainThread:2051 [wandb_run.py:_config_callback():1250] config_cb None None {'in_feats': [50], 'n_hidden': 64, 'num_nodes': 39357, 'n_classes': 2, 'n_etypes': 1, 'lr': 0.001, 'weight_decay': 0.0005, 'p': 0.3, 'n_head': 1, 'w': [1, 1], 'unclear_up': 0.025, 'unclear_down': 0.025, 'trn_idx': '[    0     3    10 ... 39351 39353 39354]', 'val_idx': '[    7     8    12 ... 39315 39339 39355]', 'tst_idx': '[    1     2     4 ... 39348 39352 39356]'}
+2024-12-09 11:58:53,427 INFO    MainThread:2051 [wandb_run.py:_finish():1854] finishing run haoyuzhang2322-zhongnan-university-of-economics-and-law/dga_reproduction/8ex9xbv7
+2024-12-09 11:58:53,427 INFO    MainThread:2051 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2024-12-09 11:58:53,427 INFO    MainThread:2051 [wandb_run.py:_restore():2066] restore
+2024-12-09 11:58:53,427 INFO    MainThread:2051 [wandb_run.py:_restore():2072] restore done
+2024-12-09 11:59:06,884 INFO    MainThread:2051 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2024-12-09 11:59:06,888 INFO    MainThread:2051 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2024-12-09 11:59:06,895 INFO    MainThread:2051 [wandb_run.py:_footer_sync_info():3398] logging synced files

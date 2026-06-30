@@ -1,0 +1,97 @@
+========================================
+数据名称 elliptic_of_amnet
+总样本数: 46564
+欺诈样本数: 4545
+非欺诈样本数: 42019
+欺诈样本占比: 9.76%
+特征个数: 93
+_E边关系下的统计信息:
+边的个数: 73248
+平均出度: 1.57
+数据划分情况:
+训练集: 21353 验证集: 8541 测试集: 16670
+训练集: 45.86% 验证集: 18.34% 测试集: 35.80%
+========================================
+超参数设定：
+dname: elliptic_of_amnet
+project: dga_reproduction
+model: dga_bin
+bin_encoding: true
+n_head: 2
+n_hidden: 128
+p: 0.3
+k: 4
+z: 0.1
+seed: 42
+bs: 64
+lr: 0.001
+weight_decay: 0.0005
+max_epochs: 50
+patience: 25
+usegpu: true
+gpuid: 0
+nowandb: false
+n_etypes 1
+n_classes 2
+========================================
+after bin_encoding： (46564, 380)
+========================================
+{'unclear_up': 0.1, 'unclear_down': 0.1}
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+You are using a CUDA device ('NVIDIA GeForce RTX 3090') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name | Type | Params
+------------------------------
+0 | dga  | DGA  | 248 K
+------------------------------
+248 K     Trainable params
+0         Non-trainable params
+248 K     Total params
+0.993     Total estimated model params size (MB)
+Error executing job with overrides: []
+Traceback (most recent call last):
+  File "train1221.py", line 654, in run
+    trainer.fit(model, datamodule.train_dataloader(), datamodule.val_dataloader())
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 608, in fit
+    call._call_and_handle_interrupt(
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/call.py", line 38, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _fit_impl
+    self._run(model, ckpt_path=self.ckpt_path)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1112, in _run
+    results = self._run_stage()
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1191, in _run_stage
+    self._run_train()
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1204, in _run_train
+    self._run_sanity_check()
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1276, in _run_sanity_check
+    val_loop.run()
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 152, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/loops/loop.py", line 199, in run
+    self.advance(*args, **kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 137, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 234, in _evaluation_step
+    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py", line 1494, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/pytorch_lightning/strategies/strategy.py", line 390, in validation_step
+    return self.model.validation_step(*args, **kwargs)
+  File "train1221.py", line 480, in validation_step
+    logits, emb_logits = self(blocks, x)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "train1221.py", line 462, in forward
+    o, emb_out = self.dga(blocks, x)
+  File "/root/miniconda3/envs/dga/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "train1221.py", line 412, in forward
+    x = x + 0.1 * risk_msg  # 0.1是风险影响因子，可调
+RuntimeError: The size of tensor a (472) must match the size of tensor b (484) at non-singleton dimension 0
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

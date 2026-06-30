@@ -1,0 +1,10 @@
+使用步骤
+激活环境
+conda activate dga
+进入代码文件夹
+cd /root/DGA-GNN/code
+运行命令
+python train.py --config-name elliptic_of_amnet
+python train.py --config-name tfinance   
+
+Use `wandb login --relogin` to force relogin

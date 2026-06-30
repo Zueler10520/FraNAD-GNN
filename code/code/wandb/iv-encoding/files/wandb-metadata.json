@@ -1,0 +1,288 @@
+{
+    "os": "Linux-5.4.0-162-generic-x86_64-with-glibc2.17",
+    "python": "3.8.20",
+    "heartbeatAt": "2024-12-09T03:50:29.421379",
+    "startedAt": "2024-12-09T03:50:26.998867",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--config-name",
+        "tfinance"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "code/train.py",
+    "git": {
+        "remote": "https://github.com/AtwoodDuan/DGA-GNN.git",
+        "commit": "0907392f6060e18230339ca30eaca0c917414820"
+    },
+    "email": null,
+    "root": "/root/DGA-GNN",
+    "host": "autodl-container-824e4b9535-83f05a1f",
+    "username": "root",
+    "executable": "/root/miniconda3/envs/dga/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 1.034375,
+        "min": 1000.0,
+        "max": 3500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2.233,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.4,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.027,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.13,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.001,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.001,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.001,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 2.244,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.001,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.4,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.134,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.145,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1.0,
+            "min": 1000.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "total": 30.0,
+        "used": 18.897571563720703
+    },
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3080 Ti",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 440.2691116333008
+    }
+}
